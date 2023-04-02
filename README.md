@@ -8,7 +8,7 @@
 
 3. Crie um ambiente virtual para o projeto usando o seguinte comando no terminal:
 
-python3 -m venv myenv
+python -m venv myenv
 
 4. Ative o ambiente virtual usando o seguinte comando:
 
@@ -16,7 +16,7 @@ myenv\Scripts\activate
 
 5. Instale as dependências necessárias usando o seguinte comando:
 
-pip install flask urllib3 json
+pip install flask urllib3
 
 6. Defina as variáveis de ambiente 'AZURE_ENDPOINT_URL' e 'AZURE_API_KEY' com os valores apropriados para o serviço que você está chamando em seu código. Você pode definir essas variáveis no terminal usando o seguinte comando:
 

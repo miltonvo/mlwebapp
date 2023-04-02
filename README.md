@@ -23,5 +23,3 @@ set AZURE_API_KEY=<valor>
 python3 app.py
 
 8. Abra um navegador da web e navegue até http://localhost:5000/ para testar o aplicativo.
-
-## Autor

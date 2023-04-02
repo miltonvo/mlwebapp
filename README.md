@@ -20,12 +20,12 @@ pip install flask urllib3
 
 6. Defina as variáveis de ambiente 'AZURE_ENDPOINT_URL' e 'AZURE_API_KEY' com os valores apropriados para o serviço que você está chamando em seu código. Você pode definir essas variáveis no terminal usando o seguinte comando:
 
-set AZURE_ENDPOINT_URL=<valor>
+set AZURE_ENDPOINT_URL=XXX
   
-set AZURE_API_KEY=<valor>
+set AZURE_API_KEY=XXX
 
 7. Inicie o aplicativo com o seguinte comando:
 
-python3 app.py
+python app.py
 
 8. Abra um navegador da web e navegue até http://localhost:5000/ para testar o aplicativo.

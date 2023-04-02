@@ -1,6 +1,6 @@
 # Machine Learning Web App
 
-## Instruções de Instalação
+## Instruções de Instalação para Windows
 
 1. Certifique-se de ter o Python instalado em sua máquina. Você pode baixar a última versão do Python em https://www.python.org/downloads/.
 
@@ -18,11 +18,7 @@ myenv\Scripts\activate
 
 pip install flask urllib3 python-dotenv
 
-6. Defina as variáveis de ambiente 'AZURE_ENDPOINT_URL' e 'AZURE_API_KEY' com os valores apropriados para o serviço que você está chamando em seu código. Você pode definir essas variáveis no terminal usando o seguinte comando:
-
-set AZURE_ENDPOINT_URL=XXX
-  
-set AZURE_API_KEY=XXX
+6. Defina as variáveis de ambiente 'AZURE_ENDPOINT_URL' e 'AZURE_API_KEY' no arquivo ".env"
 
 7. Inicie o aplicativo com o seguinte comando:
 

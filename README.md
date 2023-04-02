@@ -1,4 +1,4 @@
-# Machine Learning Web App
+# Machine Learning Web App Bike Rentals
 
 ## Instruções de Instalação para Windows
 

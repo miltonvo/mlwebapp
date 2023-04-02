@@ -2,6 +2,7 @@ import urllib.request
 import json
 import os
 import ssl
+from dotenv import load_dotenv
 from flask import Flask, render_template, request
 
 app = Flask(__name__)

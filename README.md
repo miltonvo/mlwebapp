@@ -22,10 +22,10 @@
     pip install flask urllib3 python-dotenv
   
 
-<b>6.</b> Defina as variáveis de ambiente 'AZURE_ENDPOINT_URL' e 'AZURE_API_KEY' no arquivo ".env"
+<b>6.</b> Substitua "XXX" com as suas variáveis de ambiente 'AZURE_ENDPOINT_URL' e 'AZURE_API_KEY' usando o seguinte comando:
 
-    echo "AZURE_ENDPOINT_URL=https://example.com/api" >> .env
-    echo "AZURE_API_KEY=abc123!@#" >> .env
+    echo "AZURE_ENDPOINT_URL=XXX" >> .env
+    echo "AZURE_API_KEY=XXX" >> .env
 
 
 <b>7.</b> Inicie o aplicativo com o seguinte comando:

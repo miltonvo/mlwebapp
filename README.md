@@ -24,8 +24,8 @@
 
 <b>6.</b> Substitua "XXX" com as suas variáveis de ambiente 'AZURE_ENDPOINT_URL' e 'AZURE_API_KEY' usando o seguinte comando:
 
-    echo "AZURE_ENDPOINT_URL=XXX" >> .env
-    echo "AZURE_API_KEY=XXX" >> .env
+    echo AZURE_ENDPOINT_URL=XXX >> .env
+    echo AZURE_API_KEY=XXX >> .env
 
 
 <b>7.</b> Inicie o aplicativo com o seguinte comando:

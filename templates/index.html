@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Machine Learning Web App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+
   </head>   
   <body>
     <section class="section">
@@ -11,37 +15,9 @@
         <h1 class="title">Machine Learning Web App</h1>
         <form id="myForm" method="POST" action="/predict_azure">
             <div class="field">
-                <label class="label" for="day">Qual o Dia?</label>
+                <label class="label" for="data">Qual o Data?</label>
                 <div class="control">
-                  <input class="input" type="number" id="day" name="day" min="1" max="31" required>
-                </div>
-              </div>
-              
-              <div class="field">
-                <label class="label" for="month">Qual o Mês?</label>
-                <div class="control">
-                  <select class="input" id="month" name="month" required>
-                    <option value="">Selecione um mês</option>
-                    <option value="1">Janeiro</option>
-                    <option value="2">Fevereiro</option>
-                    <option value="3">Março</option>
-                    <option value="4">Abril</option>
-                    <option value="5">Maio</option>
-                    <option value="6">Junho</option>
-                    <option value="7">Julho</option>
-                    <option value="8">Agosto</option>
-                    <option value="9">Setembro</option>
-                    <option value="10">Outubro</option>
-                    <option value="11">Novembro</option>
-                    <option value="12">Dezembro</option>
-                  </select>
-                </div>
-              </div>              
-              
-              <div class="field">
-                <label class="label" for="year">Qual o Ano?</label>
-                <div class="control">
-                  <input class="input" type="number" id="year" name="year" min="1900" max="2099" required>
+                  <input class="input datepicker" type="text" id="day" name="day" required>
                 </div>
               </div>
 
@@ -184,6 +160,12 @@
           // Envie o formulário
           this.submit();
         }
+
+        $(document).ready(function() {
+          $(".datepicker").datepicker({
+            dateFormat: "dd/mm/yy"
+          });
+        });
       </script>
       
 

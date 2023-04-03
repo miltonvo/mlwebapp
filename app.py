@@ -30,9 +30,9 @@ def predict_azure():
         "Inputs": {
             "data": [
                 {
-                    "day": int(request.form['day']),
-                    "mnth": int(request.form['month']),
-                    "year": int(request.form['year']),
+                    "day": int(request.form['day'].split('/')[0]),
+                    "mnth": int(request.form['day'].split('/')[1]),
+                    "year": int(request.form['day'].split('/')[2]),
                     "season": int(request.form['season']),
                     "holiday": int(request.form['holiday']),
                     "weekday": int(request.form['weekday']),
